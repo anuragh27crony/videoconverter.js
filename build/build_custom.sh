@@ -21,7 +21,7 @@ emconfigure ./configure --cc="emcc" --prefix=$(pwd)/../dist --enable-cross-compi
     --disable-ffplay --disable-ffprobe --disable-ffserver --disable-asm --disable-doc --disable-devices --disable-pthreads --disable-w32threads --disable-network \
     --disable-asm --disable-fast-unaligned --disable-pthreads --disable-w32threads --disable-os2threads --disable-debug --disable-stripping --disable-all --enable-ffmpeg --enable-avcodec \
     --enable-avformat --enable-avutil --enable-swresample --enable-swscale --enable-avfilter--disable-network --disable-d3d11va --disable-dxva2 --disable-vaapi --disable-vda --disable-vdpau
-    --enable-avcodec  --enable-avformat  --enable-avutil  --enable-swresample  --enable-swscale  --enable-avfilter--disable-network  --disable-d3d11va  --disable-dxva2 \
+    --enable-avcodec  --enable-avformat  --enable-avutil  --enable-swresample  --enable-swscale  --enable-avfilter --disable-network  --disable-d3d11va  --disable-dxva2 \
     --disable-vaapi  --disable-vda  --disable-vdpau  --enable-decoder=vp8  --enable-decoder=vp9  --enable-decoder=theora  --enable-decoder=mpeg2video  --enable-decoder=mpeg4 \
     --enable-decoder=h264  --enable-decoder=hevc  --enable-decoder=png  --enable-decoder=mjpeg  --enable-decoder=vorbis  --enable-decoder=opus  --enable-decoder=mp3 \
     --enable-decoder=ac3  --enable-decoder=aac  --enable-decoder=ass  --enable-decoder=ssa  --enable-decoder=srt  --enable-decoder=webvtt  --enable-demuxer=matroska \
