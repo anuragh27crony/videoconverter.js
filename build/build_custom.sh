@@ -25,10 +25,10 @@ emconfigure ./configure --cc="emcc" --prefix=$(pwd)/../dist --enable-cross-compi
     --disable-vaapi  --disable-vda  --disable-vdpau  --enable-decoder=vp8  --enable-decoder=vp9  --enable-decoder=theora  --enable-decoder=mpeg2video  --enable-decoder=mpeg4 \
     --enable-decoder=h264  --enable-decoder=hevc  --enable-decoder=png  --enable-decoder=mjpeg  --enable-decoder=vorbis  --enable-decoder=opus  --enable-decoder=mp3 \
     --enable-decoder=ac3  --enable-decoder=aac  --enable-decoder=ass  --enable-decoder=ssa  --enable-decoder=srt  --enable-decoder=webvtt  --enable-demuxer=matroska \
-    --enable-demuxer=ogg  --enable-demuxer=avi  --enable-demuxer=mov  --enable-demuxer=flv  --enable-demuxer=mpegps  --enable-demuxer=image2  --enable-demuxer=mp3  \
+    --enable-demuxer=ogg  --enable-demuxer=avi  --enable-demuxer=mov  --enable-demuxer=flv  --enable-demuxer=mpegps  --enable-demuxer=image2 --enable-demuxer=mp3  \
     --enable-demuxer=concat  --enable-protocol=file  --enable-filter=aresample  --enable-filter=scale  --enable-filter=crop  --enable-filter=overlay  --disable-bzlib  --disable-iconv  \
     --disable-libxcb  --disable-lzma  --disable-sdl  --disable-securetransport  --disable-xlib  --disable-zlib  --enable-encoder=libx264  --enable-encoder=libmp3lame  --enable-encoder=aac  \
-    --enable-muxer=mp4  --enable-muxer=mp3  --enable-muxer=null  --enable-gpl  --enable-libmp3lame  --disable-hwaccels --disable-parsers --disable-bsfs --disable-debug --disable-protocols \
+    --enable-muxer=mp4  --enable-muxer=mp3 --enable-muxer=image2 --enable-muxer=null  --enable-gpl  --enable-libmp3lame  --disable-hwaccels --disable-parsers --disable-bsfs --disable-debug --disable-protocols \
     --disable-indevs --disable-outdevs \
 
 make
