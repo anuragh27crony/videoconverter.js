@@ -1,11 +1,11 @@
 /*****************************************************************************
  * cabac.c: cabac bitstream writing
  *****************************************************************************
- * Copyright (C) 2003-2014 x264 project
+ * Copyright (C) 2003-2017 x264 project
  *
  * Authors: Laurent Aimar <fenrir@via.ecp.fr>
  *          Loren Merritt <lorenm@u.washington.edu>
- *          Jason Garrett-Glaser <darkshikari@gmail.com>
+ *          Fiona Glaser <fiona@x264.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -350,7 +350,7 @@ do\
 {\
     uint16_t mvd = x264_cabac_mvd(h,cb,i_list,idx,width);\
     x264_macroblock_cache_mvd( h, block_idx_x[idx], block_idx_y[idx], width, height, i_list, mvd );\
-} while(0)
+} while( 0 )
 
 static inline void x264_cabac_8x8_mvd( x264_t *h, x264_cabac_t *cb, int i )
 {
@@ -863,7 +863,7 @@ static void ALWAYS_INLINE x264_cabac_block_residual_internal( x264_t *h, x264_ca
         x264_cabac_encode_bypass( cb, 0 ); // sign
     }
 
-    for( int i = last-1 ; i >= 0; i-- )
+    for( int i = last-1; i >= 0; i-- )
     {
         if( l[i] )
         {
@@ -947,7 +947,7 @@ do\
     }\
     else\
         x264_cabac_encode_decision( cb, ctxidxinc, 0 );\
-} while(0)
+} while( 0 )
 
 #define x264_cabac_block_residual_dc_cbf( h, cb, ctx_block_cat, i_idx, l, b_intra )\
     x264_cabac_block_residual_cbf_internal( h, cb, ctx_block_cat, i_idx, l, b_intra, 1, )

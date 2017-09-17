@@ -1,10 +1,10 @@
 /*****************************************************************************
  * bitstream.h: bitstream writing
  *****************************************************************************
- * Copyright (C) 2003-2014 x264 project
+ * Copyright (C) 2003-2017 x264 project
  *
  * Authors: Loren Merritt <lorenm@u.washington.edu>
- *          Jason Garrett-Glaser <darkshikari@gmail.com>
+ *          Fiona Glaser <fiona@x264.com>
  *          Laurent Aimar <fenrir@via.ecp.fr>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -68,7 +68,7 @@ extern const vlc_t x264_total_zeros_2x4_dc[7][8];
 
 typedef struct
 {
-    uint8_t *(*nal_escape) ( uint8_t *dst, uint8_t *src, uint8_t *end );
+    uint8_t *(*nal_escape)( uint8_t *dst, uint8_t *src, uint8_t *end );
     void (*cabac_block_residual_internal)( dctcoef *l, int b_interlaced,
                                            intptr_t ctx_block_cat, x264_cabac_t *cb );
     void (*cabac_block_residual_rd_internal)( dctcoef *l, int b_interlaced,
