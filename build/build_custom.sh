@@ -28,7 +28,7 @@ cd ..
 cd x264
 make clean
 emconfigure ./configure --disable-thread --disable-asm \
-  --host=i686-pc-linux-gnu \
+  --host=i686-pc-linux-gnu --enable-shared \
   --disable-cli --enable-static --disable-gpl --prefix=$(pwd)/../dist
 emmake make
 emmake make install
