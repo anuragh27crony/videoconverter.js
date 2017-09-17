@@ -17,10 +17,10 @@ cd ffmpeg
 #--enable-small
 
 make clean
-emconfigure ./configure --cc="emcc" --prefix=$(pwd)/../dist --enable-cross-compile --target-os=none --arch=x86_32 --cpu=generic \
+emconfigure ./configure --cc="emcc" --prefix=$(pwd)/../dist --enable-cross-compile --enable-static --target-os=none --arch=x86_32 --cpu=generic \
 --disable-all --disable-everything --disable-ffplay --disable-ffprobe --disable-ffserver --disable-asm --disable-doc --disable-pthreads --disable-w32threads --disable-network \
 --disable-fast-unaligned --disable-os2threads --disable-debug --disable-stripping --disable-dxva2 --disable-vaapi --disable-vda --disable-vdpau --disable-bzlib  --disable-iconv \
---disable-xlib  --disable-zlib \
+--disable-xlib  --disable-zlib --disable-opencl\
 --enable-ffmpeg --enable-avcodec --enable-avcodec  --enable-avformat  --enable-avutil  --enable-swresample  --enable-swscale  --enable-avfilter \
 --enable-decoder=vp8  --enable-decoder=vp9  --enable-decoder=theora  --enable-decoder=mpeg2video  --enable-decoder=mpeg4 \
 --enable-decoder=h264  --enable-decoder=hevc  --enable-decoder=png  --enable-decoder=mjpeg  --enable-decoder=vorbis  --enable-decoder=opus  --enable-decoder=mp3 \
