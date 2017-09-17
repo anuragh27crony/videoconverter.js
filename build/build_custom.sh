@@ -13,23 +13,23 @@ emmake make install
 cd ..
 
 
-cd libvpx
-## Try some of these options: ./configure --target=js1-none-clang_emscripten --disable-examples --disable-docs --disable-multithread --disable-runtime-cpu-detect --disable-optimizations --disable-vp8-decoder --disable-vp9-decoder --extra-cflags="-O2"
-make clean
-emconfigure ./configure --prefix=$(pwd)/../dist --disable-examples --disable-docs \
-  --disable-runtime-cpu-detect --disable-multithread --disable-optimizations \
-  --target=generic-gnu
-emmake make
-emmake make install
-cd ..
+# cd libvpx
+# ## Try some of these options: ./configure --target=js1-none-clang_emscripten --disable-examples --disable-docs --disable-multithread --disable-runtime-cpu-detect --disable-optimizations --disable-vp8-decoder --disable-vp9-decoder --extra-cflags="-O2"
+# make clean
+# emconfigure ./configure --prefix=$(pwd)/../dist --disable-examples --disable-docs \
+#   --disable-runtime-cpu-detect --disable-multithread --disable-optimizations \
+#   --target=generic-gnu
+# emmake make
+# emmake make install
+# cd ..
 
 
 # x264-snapshot-20140501-2245
 cd x264
 make clean
 emconfigure ./configure --disable-thread --disable-asm \
-  --host=i686-pc-linux-gnu --enable-shared \
-  --disable-cli --enable-static --disable-gpl --prefix=$(pwd)/../dist
+  --host=i686-pc-linux-gnu \
+  --disable-cli --enable-static --disable-gpl --prefix=$(pwd)/../dist --enable-shared
 emmake make
 emmake make install
 cd ..
