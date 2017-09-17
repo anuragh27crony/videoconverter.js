@@ -16,7 +16,7 @@
 # To install in $HOME instead of /usr/local, use:
 #    make install prefix=$HOME
 
-CC=/Users/bgrinstead/Code/emscripten/emcc
+CC=/GitRepos/emscripten/emcc
 
 CFLAGS= -D_LARGEFILE64_SOURCE=1
 #CFLAGS=-O -DMAX_WBITS=14 -DMAX_MEM_LEVEL=7
@@ -27,8 +27,8 @@ CFLAGS= -D_LARGEFILE64_SOURCE=1
 SFLAGS= -D_LARGEFILE64_SOURCE=1
 LDFLAGS= -L. libz.a
 TEST_LDFLAGS=-L. libz.a
-LDSHARED=/Users/bgrinstead/Code/emscripten/emcc
-CPP=/Users/bgrinstead/Code/emscripten/emcc -E
+LDSHARED=/GitRepos/emscripten/emcc
+CPP=/GitRepos/emscripten/emcc -E
 
 STATICLIB=libz.a
 SHAREDLIB=
@@ -36,15 +36,15 @@ SHAREDLIBV=
 SHAREDLIBM=
 LIBS=$(STATICLIB) $(SHAREDLIBV)
 
-AR=/Users/bgrinstead/Code/emscripten/emar rc
-RANLIB=/Users/bgrinstead/Code/emscripten/emranlib
+AR=/GitRepos/emscripten/emar rc
+RANLIB=/GitRepos/emscripten/emranlib
 LDCONFIG=ldconfig
 LDSHAREDLIBC=-lc
 TAR=tar
 SHELL=/bin/sh
 EXE=
 
-prefix =/Users/bgrinstead/Sites/videoconverter.js/build/zlib/../dist
+prefix =/GitRepos/videoconverter.js/build/zlib/../dist
 exec_prefix =${prefix}
 libdir =${exec_prefix}/lib
 sharedlibdir =${libdir}
