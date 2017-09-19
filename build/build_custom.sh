@@ -27,7 +27,7 @@ cd ..
 # x264-snapshot-20140501-2245
 cd x264
 make clean
-emconfigure ./configure --disable-thread --disable-asm \
+emconfigure PATH="$HOME/bin:$PATH" ./configure --disable-thread --disable-asm \
   --host=i686-pc-linux-gnu \
   --disable-cli --enable-shared --disable-gpl --prefix=$(pwd)/../dist 
 emmake make -j2 SHELL="/bin/bash -x"
